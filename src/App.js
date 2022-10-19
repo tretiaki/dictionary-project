@@ -6,7 +6,10 @@ export default function App() {
     <div className="App">
       <div className="container">
         <header className="App-header">
-          <a href="https://www.google.com/" className="btn btn-primary m-5">
+          <a
+            href="https://www.google.com/"
+            className="btn btn-primary mt-5 mb-4"
+          >
             Push me
           </a>
         </header>
