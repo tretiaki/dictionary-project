@@ -2,9 +2,10 @@
   text-decoration: none;
   color: black;
   border: 1px solid #ad99e1;
+  color: #977cdd;
   padding: 10px 20px;
   font-size: 13px;
-
+  font-weight: bold;
   margin-right: 10px;
   border-radius: 20px;
   transition: all 150ms ease-in-out;
@@ -13,7 +14,7 @@
   background: #977cdd;
   color: white;
 }
-.Phonetic .text {
+.text {
   opacity: 0.5;
   font-weight: bold;
 }

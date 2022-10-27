@@ -3,7 +3,7 @@ import "./Dictionary.css";
 import axios from "axios";
 import Results from "./Results";
 
-export default function Dictionary() {
+export default function Dictionary(props) {
   let [keyword, setKeyword] = useState("sea");
   let [results, setResults] = useState(null);
   let [loaded, setLoaded] = useState(false);
@@ -43,6 +43,7 @@ export default function Dictionary() {
             placeholder="Type a word"
             autofocus={true}
             onChange={handleKeywordChange}
+            defaultValue={props.defaultKeyword}
           />
         </form>
         <Results results={results} />
