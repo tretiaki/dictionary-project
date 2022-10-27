@@ -4,7 +4,7 @@ import axios from "axios";
 import Results from "./Results";
 
 export default function Dictionary() {
-  let [keyword, setKeyword] = useState("");
+  let [keyword, setKeyword] = useState("sea");
   let [results, setResults] = useState(null);
   let [loaded, setLoaded] = useState(false);
 
@@ -14,7 +14,7 @@ export default function Dictionary() {
 
   ////https://dictionaryapi.dev/
 
-  function search(keyword) {
+  function search() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(apiUrl).then(handleResponse);
   }
@@ -30,8 +30,8 @@ export default function Dictionary() {
   }
 
   function load() {
+    search();
     setLoaded(true);
-    search("sea");
   }
 
   if (loaded) {

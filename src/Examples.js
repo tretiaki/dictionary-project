@@ -1,17 +1,11 @@
 import React from "react";
 
 export default function Examples(props) {
-  if (props.examples) {
+  if (props.example) {
     return (
       <div className="Examples">
-        {props.examples.map(function (example, index) {
-          return (
-            <div key={index}>
-              <strong>Examples: </strong>
-              {example}
-            </div>
-          );
-        })}
+        <strong>Example: </strong>
+        {props.example}
       </div>
     );
   } else {
